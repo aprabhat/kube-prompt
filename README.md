@@ -18,8 +18,7 @@ Althogh this is not recommened, but you can use below mentioned comment to invok
 invoke-expression (invoke-webrequest 'https://raw.githubusercontent.com/aprabhat/kube-prompt/main/script/prompt.ps1').content
 ```
 
-
-To display the current conext and namespace run `kubeon `command
+To display the current context and namespace run `kubeon `command
 
 To turn off the modified prompt, use `kubeoff` commend
 
