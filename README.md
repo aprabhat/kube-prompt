@@ -10,7 +10,7 @@ To make use of this utility, `kubectl` should be installed.
 
 ## Installation
 
-1. **Using dot sourcing**
+1. **Using Invoke-Expression cmdlet**
 
 Althogh this is not recommened, but you can use below mentioned comment to invoke this utility.
 
