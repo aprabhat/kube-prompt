@@ -1,6 +1,6 @@
 function kubeOff {
     function global:Prompt {
-        return ("PS " + $(Get-Location) +">"); -nonewline -foregroundcolor White
+        return ("PS Demo >")
     }
 }
 
