@@ -6,10 +6,9 @@ function kubeOff {
 
 function kubeOn(){
     function global:Prompt {
-        $context = Write-Host $(kubectl config current-context) -ForegroundColor Red -NoNewline;
-        $pipe = Write-Host " | " -NoNewline;
-        $namespace = Write-Host $(kubectl config view --minify --output 'jsonpath={..namespace}') -ForegroundColor Yellow -NoNewline;
-        $end = Write-Host ">" -NoNewline;
-        return $context; + $pipe; + $namespace; + $end;
+        $ESC = [char]27
+        $context = $(kubectl config current-context)
+        $namespace = $(kubectl config view --minify --output 'jsonpath={..namespace}')
+        "$ESC[38;2;0;255;128mctx:$context|$ESC[38;2;0;204;204mns:$namespace>"
     }
 }
