@@ -10,9 +10,9 @@ To make use of this utility, `kubectl` should be installed.
 
 ## Installation
 
-1. **Using Invoke-Expression cmdlet**
+**Using Invoke-Expression cmdlet**
 
-Althogh this is not recommened, but you can use below mentioned comment to invoke this utility.
+You can use below mentioned comment to invoke this utility.
 
 ```
 invoke-expression (invoke-webrequest 'https://raw.githubusercontent.com/aprabhat/kube-prompt/main/script/prompt.ps1').content
@@ -23,6 +23,3 @@ To display the current context and namespace run `kubeon `command
 To turn off the modified prompt, use `kubeoff` commend
 
 ![](/screenshots/dot-sourcing.gif)
-
-2. **Using Module**
-   [WIP]
