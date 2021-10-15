@@ -1,11 +1,12 @@
 function kubeOff {
-    function global:Prompt {
-        return ("PS Demo >")
+    function script:Prompt {
+        $initialPromptValue
     }
 }
 
 function kubeOn(){
-    function global:Prompt {
+    $script:initialPromptValue = global:Prompt
+    function script:Prompt {
         $ESC = [char]27
         $symbol = [char]0x2388
         $context = $(kubectl config current-context)
